@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/* GENERAL - MOBILE FIRST */
+html, body{
+	background-color:#66769b;
+	margin:2%;
+	font-family: 'Open Sans', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color:#3e3d3d;
+}
+
+/* hoofdmenu */
+nav{
+	margin-left:0;
+	padding:0;}
+
+nav ul{
+	margin:0;
+	padding:0;
+}
+nav ul li{
+	list-style-type:none;
+	background-color:#70b09f;
+	display:block;
+	padding:0.25em;
+	height:1.5em;
+}
+nav ul li a{
+	text-decoration:none;
+	color:inherit;
+	font-weight:bold;
+	display:block;	
+}
+#hoofdmenu ul li a:hover, #hoofdmenu ul li a:active {
+	text-decoration:none;
+	color:white;
+}
+nav ul li:nth-child(2){
+	background-color:#b86b84;
+}
+nav ul li:nth-child(3){
+	background-color:#f5e560;
+}
+nav ul li:nth-child(4){
+	background-color:#5845e6;
+}
+nav ul li:nth-child(5){
+	background-color:#fdbb66;
+}
+
+
+/* LAYOUT */
+h1{
+	text-shadow:#3B5582 5px 5px 10px;}
+	
+
+/* helper classes */
+.mobiel{
+	display:block;
+}
+.klein-tablet{
+	display:none;
+}
+.groter-tablet{
+	display:none;
+}
+.desktop{
+	display:none;
+}
+
+/* TABLETS */
+@media screen and (min-width:361px){
+	/* helper classes */
+.mobiel{ display:none;}
+.klein-tablet{ display:block;}
+.groter-tablet{ display:none;}
+.desktop{ display:none;}
+
+/*********** TABLEY LAYOUT ***********/
+/* 	Hoofdmenu geblokt */
+
+html, body{
+	background-color:#66769b;
+	margin:2%;
+	font-family: 'Special Elite';
+	color:#3e3d3d;
+}
+
+
+/* hoofdmenu */
+nav{
+	float:right;
+	margin-left:0;
+	padding:0;}
+
+nav ul{
+	margin:0;
+	padding:0;
+}
+nav ul li{
+	list-style-type:none;
+	background-color:#70b09f;
+	display:block;
+	padding:0.25em;
+	height:1.5em;
+}
+nav ul li a{
+	text-decoration:none;
+	color:inherit;
+	font-weight:bold;
+	display:block;	
+}
+#hoofdmenu ul li a:hover, #hoofdmenu ul li a:active {
+	text-decoration:none;
+	color:white;
+}
+nav ul li:nth-child(2){
+	background-color:#b86b84;
+}
+nav ul li:nth-child(3){
+	background-color:#f5e560;
+}
+nav ul li:nth-child(4){
+	background-color:#5845e6;
+}
+nav ul li:nth-child(5){
+	background-color:#fdbb66;
+}
+
+
+/* LAYOUT */
+h1{
+	text-shadow:#3B5582 5px 5px 10px;}
+
+
+
+.container{
+	width:94%;
+	margin:0 auto;
+}
+header{
+	height:10em;										/* 160px */
+	background:darkseagreen;
+}
+header h1{
+	font-size:2em;										/* 32px = 1em */
+	float:left;
+	top:3.5em;											/* 96px */
+	left:0;
+	margin:0 0.5em;										/* 16px */
+}
+
+/* hoofdmenu */
+#hoofdmenu{
+	margin:0;
+}
+#hoofdmenu li{
+	font-size:1.2em;									/* 20px = 1em */
+	width:26.8%;
+	float:left;
+	border-top:none;
+	border-left:none;
+	border-bottom:1px solid darkslategray;
+	border-right:1px solid darkslategray;
+	padding:0.8em 3%;
+}
+#hoofdmenu li:first-child, #hoofdmenu li:nth-child(4){
+	border-top:none;
+	border-left:1px solid darkslategray;
+}
+#hoofdmenu li:hover{
+	color:white;
+	background-color:darkslategray;
+}
+
+}
+
+
+
+
+
+
+
+/* html, body, article, section, header, footer{
+	border:dotted red;
+} */
